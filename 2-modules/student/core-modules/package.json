@@ -1,0 +1,12 @@
+{
+  "name": "core-modules",
+  "version": "1.0.0",
+  "description": "Learning NodeJS Core Modules | Kelasprogramming",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start":"node index.js"
+  },
+  "author": "fawwaz",
+  "license": "ISC"
+}

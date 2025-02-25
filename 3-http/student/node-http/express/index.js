@@ -20,14 +20,12 @@ app.listen(PORT,function(){
 //redirect to pathNotFoundPage
 // Define absolute path to `notFound.html` file (used from prev example)
 
-// // Method: __dirname from node.js
+// // Method1: __dirname from node.js
 // const notFoundPath = path.join(__dirname,"..","pages","notFound.html");
-
 // app.get("*",function(req,res){
 //     return res.status(404).sendFile(notFoundPath);
 // });
-
-// Method: When you know absolute path
+// Method2: When you know absolute path
 const notFoundPath = "path_until_html_file";
 app.get("*",function(req,res){
     return res.status(404).sendFile(notFoundPath);

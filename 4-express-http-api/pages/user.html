@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            background-color: #dd6363;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #Cap::before {
+            text-transform: capitalize;
+            content:"-";
+        }
+        #Cap::after {
+            text-transform: capitalize;
+            content:" ";
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="Cap">Welcome to my website, {{username}}</h1>
+</body>
+</html>

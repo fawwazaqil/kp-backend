@@ -1,3 +1,13 @@
+-- CREATE Operation
+-- Insert a new user
+INSERT INTO "Users"(username,email,password)
+VALUES ('fawwaz','fawwaz@gmail.com','123456');
+
+-- Insert a new link
+INSERT INTO "Links" (actual_link,shortened_link,created_by)
+VALUES ('https://facebook.com/fawwaz','fawwaz-fb',
+(SELECT id FROM "Users" WHERE username='fawwaz'));
+
 -- READ Operation
 -- Get id user from specific email
 SELECT id from "Users" WHERE email='fawwaz@gmail.com';

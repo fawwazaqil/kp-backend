@@ -6,14 +6,16 @@
   "scripts": {
     "dev": "node --watch --env-file=.env index.js",
     "start": "node --env-file=.env index.js",
-    "db:init":"node --env-file=.env ./model/index.js"
+    "db:init": "node --env-file=.env ./model/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.14.0"
   }
 }

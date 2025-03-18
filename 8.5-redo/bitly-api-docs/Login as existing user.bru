@@ -1,0 +1,18 @@
+meta {
+  name: Login as existing user
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:4000/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"baba@mail.com",
+    "password":"123"
+  }
+}

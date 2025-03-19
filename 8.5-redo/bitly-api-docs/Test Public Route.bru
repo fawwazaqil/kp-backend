@@ -1,11 +1,11 @@
 meta {
-  name: Login as existing user
+  name: Test Public Route
   type: http
-  seq: 3
+  seq: 5
 }
 
-post {
-  url: http://localhost:4000/login
+get {
+  url: http://localhost:4000/private
   body: json
   auth: none
 }

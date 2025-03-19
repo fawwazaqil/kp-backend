@@ -56,14 +56,25 @@ async function login (req, res){
             // if password not match, return error 401
         return res.status(401).json({"message":"Invalid password"});
     }
-    
-    res.json(dbRes);
+}
+
+// KENA STUDY!!
+function privateRoute (req, res){
+    const user = req.user;
+    return res.status(200).json({"message":"Private content",data:user});
 
 }
+
+async function publicRoute (req, res){
+    return res.status(200).json({"message":"Private content"});
+}
+
 
 const userController = {
     register,
     login,
+    publicRoute,
+    privateRoute,
 }
 export default userController;
 
